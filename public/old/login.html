@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/reset.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <title>Habit Hacker</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
+    <div class="container">
+    <a class="navbar-brand" href="#">Habit Hacker</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/createuser"">Register</a>
+            </li>
+        </ul>
+
+    </div>
+    </div>
+</nav>
+
+<main class="my-form">
+    <div class="cotainer">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header" style="background-color: #e3f2fd;" >Login</div>
+                        <div class="card-body">
+                        <form id="loginForm">      
+                                <div class="form-group row">
+                                    <label for="email_login" class="col-md-4 col-form-label text-md-right">User Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="username" class="form-control" name="email_login">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="password_login" class="col-md-4 col-form-label text-md-right">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" id="password_login" class="form-control" name="password_login">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 offset-md-4" style="text-align:center">
+
+                                    <button type="submit" class="btn btn-light submit btn-md">Submit</button>
+                              
+                                </div></form>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<script src="/js/login.js"></script>
+
+</body>
+</html>

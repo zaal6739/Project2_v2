@@ -1,0 +1,15 @@
+.w3-black, .w3-hover-black:hover {
+  color: white!important;
+  background-color: #FFC30B!important;
+}
+
+ .w3-red, .w3-hover-red:hover {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(43, 71, 94) !important;
+}
+.w3-padding-large {
+  padding: 0 15px 0 15px!important;
+}
+button {
+  border-radius: 500px!important;
+}

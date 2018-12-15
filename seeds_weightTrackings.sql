@@ -1,0 +1,13 @@
+ INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-10-31', 189,12/1/2018,12/1/2018);
+  INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-2', 189,12/1/2018,12/1/2018);
+   INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-3', 193,12/1/2018,12/1/2018);
+    INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-5', 191,12/1/2018,12/1/2018);
+     INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-7', 188,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-8', 185,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-10', 184,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-11', 186,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-15', 182,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-18', 179,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-20', 175,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-23', 170,12/1/2018,12/1/2018);
+      INSERT INTO habit_tracker_db.weighttrackings (username, dateweighed, weight,createdAt,updatedAt) VALUES ('ib1fh9ls5', '2018-11-27', 168,12/1/2018,12/1/2018);

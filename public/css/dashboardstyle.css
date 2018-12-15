@@ -1,0 +1,19 @@
+#dashboardcontainer {
+    margin-top: 27px;
+    height: 90vh;
+}
+
+#sidebar {
+    background-color: #2B475E;
+    padding-top: 10px;
+    color: white;
+}
+
+#maincontent {
+    margin-top: 30px;
+}
+
+.card-header {
+    background-color: #2B475E;
+    color: white;
+}

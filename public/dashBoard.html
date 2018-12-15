@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Habit Hacker</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif
+    }
+
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px
+    }
+  </style>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://d3js.org/d3.v5.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/mainPage.css ">
+  <link rel="stylesheet" type="text/css" href="/css/dashboardstyle.css ">
+</head>
+
+<body>
+  <div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="/login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login</a>
+      <a href="/createuser" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Register</a>
+
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="/login" class="w3-bar-item w3-button w3-padding-large">Login</a>
+      <a href="/createuser" class="w3-bar-item w3-button w3-padding-large">Registration</a>
+    </div>
+  </div>
+
+  <div class="row" id="dashboardcontainer">
+    <div class="col-3" id="sidebar">
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+          aria-controls="v-pills-home" aria-selected="true">Dashboard</a>
+        <a class="nav-link" id="v-pills-newGoal-tab" data-toggle="pill" href="#v-pills-newGoal" role="tab"
+          aria-controls="v-pills-newGoal" aria-selected="false">New Goal</a>
+        <a class="nav-link" id="v-pills-goals-tab" data-toggle="pill" href="#v-pills-goals" role="tab" aria-controls="v-pills-goals"
+          aria-selected="false">Goals</a>
+
+      </div>
+    </div>
+    <div class="col-9" id="maincontent">
+
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header"><i class="fas fa-table"></i> Profile</div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+              <div class="col-md-6">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <tbody>
+                      <tr>
+                        <th>User Name</th>
+                        <td id="tableUserName"></td>
+                      </tr>
+                      <tr>
+                        <th>First Name</th>
+                        <td id="tableFirstName"></td>
+                      </tr>
+                      <tr>
+                        <th>Last Name</th>
+                        <td id="tableLastName"></td>
+                      </tr>
+                      <tr>
+                        <th>Email</th>
+                        <td id="tableEmail"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <th>Birthday</th>
+                          <td id="tableBirthday"></td>
+                        </tr>
+                        <tr>
+                          <th>Gender</th>
+                          <td id="tableGender"></td>
+                        </tr>
+                        <tr>
+                          <th>Height</th>
+                          <td id="tableHeight"></td>
+                        </tr>
+                        <tr>
+                          <th>Weight</th>
+                          <td id="tableWeight">Weight</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="v-pills-newGoal" role="tabpanel" aria-labelledby="v-pills-newGoal-tab">
+          <main class="my-form">
+            <div class="cotainer">
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <i class="fas fa-table"></i> Add Goal</div>
+                    <div class="card-body">
+                      <form name="my-form">
+                        <div class="form-group row">
+                          <label for="goal_name" class="col-md-4 col-form-label text-md-right">Goal Name</label>
+                          <div class="col-md-6">
+                            <input type="text" id="goal_name" class="form-control" name="goal_name">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="goal_weight" class="col-md-4 col-form-label text-md-right">Goal Weight</label>
+                          <div class="col-md-6">
+                            <input type="text" id="goal_weight" class="form-control" name="username">
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <label for="time_frame" class="col-md-4 col-form-label text-md-right">Time Frame</label>
+                          <div class="col-md-3">
+                            <input type="number" id="time_frame_amount" class="form-control" name="time_frame_amount"
+                              placeholder="Number of">
+                          </div>
+                          <div class="col-md-3">
+                            <select class="form-control" id="time_frame">
+                              <option>Week</option>
+                              <option>Month</option>
+                              <option>Year</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 offset-md-4">
+                          <button type="submit" class="btn btn-primary" id="submitForm">
+                            Add
+                          </button>
+                        </div>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </main>
+
+        </div>
+        <div class="tab-pane fade" id="v-pills-goals" role="tabpanel" aria-labelledby="v-pills-goals-tab">
+          <div class="container-fluid">
+
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-table"></i>
+                Your Goals
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Entry</th>
+                        <th>Weight</th>
+                        <th>Goal Weight</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <th>Entry</th>
+                        <th>Weight</th>
+                        <th>Goal Weight</th>
+                        <th>Date</th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>200</td>
+                        <td>175</td>
+                        <td>12/11/2018</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            </div>
+
+            <!-- Area Chart Example-->
+            <div class="card mb-3">
+              <div class="card-header">
+                <i class="fas fa-chart-area"></i>
+                Track Your Progress!</div>
+              <div class="card-body">
+                <canvas id="myAreaChart" width="100%" height="30">
+
+                </canvas>
+                <svg></svg>
+                <script src="https://d3js.org/d3.v4.min.js"></script>
+              </div>
+              <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    let url = window.location.href;
+    let id = url.substring(url.lastIndexOf('/') + 1);
+   
+    var apiW = "api/dashboard/" + id;
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+      fetch(apiW).then(function (response) {
+        console.log(response)
+        return response.text();
+      })
+        .then(function (data) {
+          console.log(data)
+          var parsedData = parseData(data);
+          console.log(parsedData);
+          drawChart(parsedData);
+        })
+
+      function parseData(data) {
+        var arr = [];
+        for (var i in data) {
+          console.log(data[i].dateweighed + ':' + data[i].weight);
+          arr.push(
+            {
+              date: new Date(data[i].dateweighed), //date
+              value: +data[i].weight //convert string to number
+            });
+        }
+        return arr;
+
+      }
+
+      //chart area 
+      function drawChart(data) {
+        var svgWidth = 600, svgHeight = 400;
+        var margin = { top: 20, right: 20, bottom: 30, left: 50 };
+        var width = svgWidth - margin.left - margin.right;
+        var height = svgHeight - margin.top - margin.bottom;
+        var svg = d3.select('svg')
+          .attr("width", svgWidth)
+          .attr("height", svgHeight);
+
+        var g = svg.append("g")
+          .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")"
+          );
+
+        var x = d3.scaleTime().rangeRound([0, width]);
+        var y = d3.scaleLinear().rangeRound([height, 0]);
+
+        var line = d3.line()
+          .x(function (d) { return x(d.date) })
+          .y(function (d) { return y(d.value) })
+        x.domain(d3.extent(data, function (d) { return d.date }));
+        y.domain(d3.extent(data, function (d) { return d.value }));
+
+        g.append("g")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x))
+          .select(".domain")
+          .remove();
+
+        g.append("g")
+          .call(d3.axisLeft(y))
+          .append("text")
+          .attr("fill", "#000")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", "0.71em")
+          .attr("text-anchor", "end")
+          .text("Weight");
+
+        g.append("path")
+          .datum(data)
+          .attr("fill", "none")
+          .attr("stroke", "steelblue")
+          .attr("stroke-linejoin", "round")
+          .attr("stroke-linecap", "round")
+          .attr("stroke-width", 2)
+          .attr("d", line);
+      }
+
+    });
+    function getWeightData(user) {
+      $.get("api/track/" + user, function (data) {
+
+        return data;// console.log(data)
+      });
+
+    }
+  </script>
+
+  <style>
+    .line-chart {
+      border: 1px solid green;
+    }
+  </style>
+  <script src="/js/dashboard.js"></script>
+</body>
+
+</html>

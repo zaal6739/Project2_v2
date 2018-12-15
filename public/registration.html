@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Habit Tracker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Custom css-->
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="/css/mainPage.css ">
+    <link rel="stylesheet" type="text/css" href="/css/style.css ">
+  
+    <title>Habit Hacker</title>
+  </head>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a href="/" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="/login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login</a>
+    <a href="/createuser" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Register</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/login" class="w3-bar-item w3-button w3-padding-large">Login</a>
+    <a href="/createuser" class="w3-bar-item w3-button w3-padding-large">Registration</a>
+
+  </div>
+</div>
+
+    <div class="container container5">
+        <div class="card"></div>
+        <div class="card">
+            <h1 class="title">Register</h1>
+            <div class="card-body">
+                <form name="my-form">
+                    <div class="input-container">
+                        <input type="text" id="first_name" required="required" />
+                        <label for="first_name">First Name</label>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="last_name" required="required" />
+                        <label for="last_name">Last Name</label>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="birthday" class="col-md-4 col-form-label text-md-right">Birthday</label>
+                        <div class="col-md-6">
+                            <input type="date" id="birthday" class="form-control" name="birthday">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="gender" class="col-md-4 col-form-label text-md-right">Gender</label>
+                        <div class="col-md-6">
+                            <select class="form-control" id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="feet" class="col-md-4 col-form-label text-md-right">Height</label>
+                        <div class="col-md-3">
+                            <input type="number" id="feet" class="form-control" name="feet" placeholder="Feet">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="number" id="inches" class="form-control" name="inches" placeholder="inches">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="weight" class="col-md-4 col-form-label text-md-right">Weight</label>
+                        <div class="col-md-6">
+                            <input type="number" id="weight" class="form-control" name="weight" placeholder="in pounds" min="1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-0 offset-md-0">
+                        <div class="button-container">
+                            <button id="submitForm"><span>Register</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="/js/registration.js"></script>
+</body>
+
+</html>
